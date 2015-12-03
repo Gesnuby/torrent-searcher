@@ -1,0 +1,18 @@
+@import model.Torrent
+@(torrents: Seq[Torrent])
+
+@index {
+    <div class="container">
+    @for(torrent <- torrents) {
+        <div class="list-group">
+            <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="list-group-item">
+                    <h5 class="list-group-item-heading">@torrent.name</h5>
+                </a>
+            </div>
+            </div>
+        </div>
+    }
+    </div>
+}
